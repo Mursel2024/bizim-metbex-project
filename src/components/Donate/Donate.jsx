@@ -19,6 +19,13 @@ function Donate() {
     email: "",
   });
 
+  // Yoxlama funksiyaları
+  const isValidFin = (fin) => /^[A-Z0-9]{7}$/.test(fin);
+  const isValidPhone = (phone) => /^\+?\d{10,13}$/.test(phone);
+  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const isValidAmount = (amount) => Number(amount) >= 1;
+  const isValidFullname = (name) => /^[A-Za-zƏəĞğİıÖöŞşÜüÇç\s]{3,}$/.test(name);
+  
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
