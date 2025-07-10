@@ -1,0 +1,103 @@
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+    padding: 48px 16px 32px 16px;
+    box-sizing: border-box;
+}
+
+.header-logo img {
+    width: 120px;
+    margin-bottom: 28px;
+}
+
+.header-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #222;
+    letter-spacing: 0.01em;
+}
+
+.header-description {
+    font-size: 1.13rem;
+    color: #444;
+    max-width: 440px;
+    margin: 0 auto 36px auto;
+    line-height: 1.7;
+}
+
+.header-social {
+    margin-top: 36px;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-social p {
+    margin-bottom: 12px;
+    color: #222;
+    font-size: 1.04rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 0;
+}
+
+.social-links a {
+    color: #1877f2;
+    transition: color 0.2s, transform 0.18s;
+    font-size: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:last-child {
+    color: #e1306c;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+    transform: scale(1.08);
+}
+
+/* Mobil üçün uyğunluq */
+@media (max-width: 600px) {
+    .header {
+        padding: 28px 4vw 18px 4vw;
+    }
+    .header-logo img {
+        width: 80px;
+        margin-bottom: 18px;
+    }
+    .header-title {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+    .header-description {
+        font-size: 1rem;
+        max-width: 98vw;
+        margin-bottom: 24px;
+    }
+    .header-social {
+        margin-top: 24px;
+        max-width: 98vw;
+    }
+    .social-links {
+        gap: 18px;
+    }
+    .social-links a {
+        font-size: 1.5rem;
+    }
+}
