@@ -164,7 +164,7 @@ function Donate() {
   // Qəbz görünüşü
   if (success && showReceipt) {
     const receiptText = `
-        Beneficiary name: NÜMUNƏ BİZİM MATBAX PUBLIK HUQUQI SAXSI
+        Beneficiary name: NÜMUNƏ BİZİM MƏTBƏX PUBLIK HÜQUQİ ŞƏXSİ
         Beneficiary account: AZ25IBAZ40190018108300377204
         Beneficiary account currency: AZN
         Beneficiary bank: Azərbaycan Beynəlxalq Bankı ASC
